@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Шаблон</title>
+	<meta charset="utf-8">
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+<script src="js1.js"></script>
+	<script src="tmpl.js"></script>
+	<link rel="stylesheet" href="s.css">
+</head>
+    
+	<body>
+	
+<script type="text/template" id="test">
+	<h1>Тест по программированию</h1>
+	<form id="first" method="post">
+
+	<% { %>
+<div class="test">
+	<ul><%= data.question %>
+    </ul>
+     <li><input type="checkbox"><label><%= data.answer1 %></label></li>
+       <li><input type="checkbox"><label><%= data.answer2 %></label></li>
+         <li><input type="checkbox"><label><%= data.answer3 %></label></li>
+
+</div>
+	<% }; %>
+
+<br><input id="second" type="submit" value="Записать результат"></input>
+
+    
+    </form>
+
+	</script>
+	
+	</body>
+	
+	
+	
+	
+
+</html>
